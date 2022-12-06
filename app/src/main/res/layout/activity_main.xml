@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchText" />
+    <Button
+        android:id="@+id/restxml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dato_xml"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintLeft_toRightOf="@+id/buscar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchText" />
+    <Button
+        android:id="@+id/restjson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datos_json"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintLeft_toRightOf="@+id/restxml"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchText" />
+    <Button
+        android:id="@+id/restjsonid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="@string/json_id"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/buscar"
+        app:layout_constraintRight_toRightOf="@id/buscar"
+        app:layout_constraintTop_toTopOf="@+id/buscar" />
+    <Button
+        android:id="@+id/restjsonadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/json_post"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintLeft_toLeftOf="@+id/restxml"
+        app:layout_constraintRight_toRightOf="@id/restxml"
+        app:layout_constraintTop_toBottomOf="@+id/restxml" />
+    <Button
+        android:id="@+id/restjsondelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/json_delete"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintLeft_toLeftOf="@+id/restjson"
+        app:layout_constraintRight_toRightOf="@id/restjson"
+        app:layout_constraintTop_toBottomOf="@+id/restjson" />
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscroll"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buscar"
+        app:layout_constraintVertical_bias="0.576">
+        <TextView
+            android:id="@+id/outText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nestedscroll"
+            app:layout_constraintVertical_bias="0.062" />
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

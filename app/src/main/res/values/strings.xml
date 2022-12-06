@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">XMLJSON</string>
+    <string name="buscar">buscar</string>
+    <string name="dato_xml">Dato xml</string>
+    <string name="datos_json">Datos JSON</string>
+    <string name="error">No se encuentra la información revice su conexion</string>
+    <string name="json_id">JSON id</string>
+    <string name="json_post">JSON POST</string>
+    <string name="json_delete">JSON DELETE</string>
+</resources>
